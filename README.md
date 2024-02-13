@@ -1,8 +1,8 @@
-#Spy Chat
+# Spy Chat
 This is a websocket based application assigned to me for USU's CS4610 the starting code is provided by Proffesor Josheph Ditton.  
-#Use
+# Use
 The Spy Chat application is built using TypeScript as the backend and JavaScript in the frontend utilizing React.js.  
-##To opperate: 
+## To opperate: 
 1. The user must cd to the SpyChat directory and run either `yarn install` or `npm install` to intialize the packages
 2. The user then with a second terminal can cd to `SpyChat/client`
 3. Using both terminals run `yarn dev` or `npm dev` this will start both the backend server and the frontend and allow communication between the two
