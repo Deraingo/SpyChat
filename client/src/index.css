@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme:dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -11,28 +11,66 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+#root{
+  background-color: #242424;
+}
+.encrypted-messages{
+  text-align: left;
+  background-color: #292929;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.decrypted-messages{
+  text-align: left;
+  background-color: #292929;
+  padding: 10px;
+  color: white;
+}
+.message-container {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.decrypted-message{
+  color: white;
+}
+.decrypt-button {
+  margin-left: 10px; /* Add margin between message and decrypt button */
+  padding: 8px 16px; /* Adjust padding for the button */
+}
+.message {
+  flex: 1; /* Allow the message to grow or shrink as needed */
+  padding: 10px;
+  color: white;
+  white-space: wrap; /* Change to 'nowrap' if you don't want text wrapping */
+  overflow: hidden; /* Hide overflowed text */
+  text-overflow: ellipsis; /* Display ellipsis for overflowed text */
+}
+.decrypt-button{
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.messages-header{
+  margin-top: 20px;
+  color: white;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.message-input{
+  margin: 5px;
 }
-
-h1 {
+.container {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+.spy-chat {
   font-size: 3.2em;
   line-height: 1.1;
+  color: white;
 }
 
 button {
@@ -47,14 +85,9 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #4d4d4d;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -66,3 +99,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
